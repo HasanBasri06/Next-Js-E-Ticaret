@@ -7,7 +7,7 @@ async function getProducts() {
     return resData   
 }
 
-async function page() {
+async function page({Component, pageProps}) {
   const products = await getProducts()
 
   console.log(products);
