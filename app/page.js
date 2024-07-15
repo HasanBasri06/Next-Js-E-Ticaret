@@ -7,10 +7,8 @@ async function getProducts() {
     return resData   
 }
 
-async function page({Component, pageProps}) {
+async function page() {
   const products = await getProducts()
-
-  console.log(products);
 
   return (
     <div className={"grid md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-10 mt-10"}>

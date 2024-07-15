@@ -58,11 +58,9 @@ export const BasketProvider = ({children})  => {
         toast.success('Sepete ürün eklendi', {
             position: 'bottom-right'
         })
-
-        console.log(basket);
     }
 
-    return <BasketContext.Provider value={{addToBasket, basketLength: basket.length}}>
+    return <BasketContext.Provider value={{addToBasket, basketLength: basket.length, basketList: basket}}>
         {children}
     </BasketContext.Provider>
 }

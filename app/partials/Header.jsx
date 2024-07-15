@@ -1,10 +1,13 @@
+import Link from "next/link"
 import Menu from "../components/Menu"
 
 function Header() {
   return (
     <header className={"w-full h-32 border-b shadow-sm flex flex-col items-center justify-between box-border"}>
         <div className={"menu-bar"}>
-          <div>LOog</div>
+          <div className="text-2xl">
+            <Link href={"/"}>LOog</Link>
+          </div>
           <div>
             <Menu />
           </div>
